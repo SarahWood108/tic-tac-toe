@@ -27,23 +27,60 @@ function getWinner() {
         // get all possibilities
 
         if (box1.innerHTML !== " " && box1.innerHTML === box2.innerHTML && box2.innerHTML === box3.innerHTML) {
-            console.log("win");
+          if(player !== "x"){
+            alert("x wins");
+            }else{
+                alert("o wins")
+            }
         } else if (box4.innerHTML !== " " && box4.innerHTML === box5.innerHTML && box4.innerHTML === box6.innerHTML) {
-            console.log("win");
+    
+            if(player !== "x"){
+                alert("x wins");
+                }else{
+                    alert("o wins")
+                }
         } else if (box7.innerHTML !== " " && box7.innerHTML === box8.innerHTML && box7.innerHTML === box9.innerHTML) {
-            console.log("win");
+            if(player !== "x"){
+                alert("x wins");
+                }else{
+                    alert("o wins")
+                }
         } else if (box1.innerHTML !== " " && box1.innerHTML === box4.innerHTML && box1.innerHTML === box7.innerHTML) {
-            console.log("win");
+            if(player !== "x"){
+                alert("x wins");
+                }else{
+                    alert("o wins")
+                }
         } else if (box1.innerHTML !== " " && box1.innerHTML === box4.innerHTML && box1.innerHTML === box7.innerHTML) {
-            console.log("win");
+            if(player !== "x"){
+                alert("x wins");
+                }else{
+                    alert("o wins")
+                }
         } else if (box2.innerHTML !== " " && box2.innerHTML === box5.innerHTML && box2.innerHTML === box8.innerHTML) {
-            console.log("win");
+            if(player !== "x"){
+                alert("x wins");
+                }else{
+                    alert("o wins")
+                }
         } else if (box3.innerHTML !== " " && box3.innerHTML === box6.innerHTML && box3.innerHTML === box9.innerHTML) {
-            console.log("win");
+            if(player !== "x"){
+                alert("x wins");
+                }else{
+                    alert("o wins")
+                }
         } else if (box1.innerHTML !== " " && box1.innerHTML === box4.innerHTML && box1.innerHTML === box9.innerHTML) {
-            console.log("win");
+            if(player !== "x"){
+                alert("x wins");
+                }else{
+                    alert("o wins")
+                }
         } else if (box3.innerHTML !== " " && box3.innerHTML === box5.innerHTML && box3.innerHTML === box7.innerHTML) {
-            console.log("win");
+            if(player !== "x"){
+                alert("x wins");
+                }else{
+                    alert("o wins")
+                }
         }
     }
 $("#resetButton").click(function() {
