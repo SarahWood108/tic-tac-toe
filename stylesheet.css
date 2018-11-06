@@ -38,3 +38,7 @@ h1 {
   td:hover{
     background-color: aqua;
   }
+  p{
+    text-align: center;
+    color: navy;
+  }
