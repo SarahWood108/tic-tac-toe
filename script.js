@@ -14,7 +14,7 @@ function getWinner() {
     box8 = document.getElementById("box8")
     box9 = document.getElementById("box9")
 
-    // for clicking the differnt boxes
+    // for clicking the different boxes
     for (i = 1; i < 10; i++) {
         box = $("#box" + i)
         box.one('click', oneClick)
