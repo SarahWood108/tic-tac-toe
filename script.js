@@ -1,6 +1,9 @@
+// creating the function for a winner
 function getWinner() {
     let player = "x"
     counter = ""
+
+    // setting variable for the different boxes
     let box1 = document.getElementById("box1")
     box2 = document.getElementById("box2")
     box3 = document.getElementById("box3")
@@ -11,10 +14,12 @@ function getWinner() {
     box8 = document.getElementById("box8")
     box9 = document.getElementById("box9")
 
+    // for clicking the differnt boxes
     for (i = 1; i < 10; i++) {
         box = $("#box" + i)
         box.one('click', oneClick)
     }
+    // creating the function for clicking the boxes only ONE time as X or O
     function oneClick() {
         this.innerHTML = player
         if (player === "x") {
@@ -83,11 +88,12 @@ function getWinner() {
                 }
         }
     }
+    // reset button function
 $("#resetButton").click(function() {
     location.reload()
 })
 }
-
+// Calling the winner function
 $(() => {
     getWinner()
 })
