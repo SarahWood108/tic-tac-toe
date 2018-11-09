@@ -17,8 +17,10 @@ function getWinner() {
 
     // for clicking the different boxes
     for (i = 1; i < 10; i++) {
+         //this creates a jQuery object using the id of "box" and puts into the variable of box
         box = $("#box" + i)
-        box.one('click', oneClick)
+       // this adds the click event to the box
+        box.on('click', oneClick)
     }
 
     // creating the function for clicking the boxes only ONE time as X or O
@@ -31,8 +33,8 @@ function getWinner() {
         else if (player === "o") {
             player = "x"
         }
-
-        this.removeEventListener("click", oneClick)
+        $(this).off("click")
+       
         // get all possibilities
 
         if (box1.innerHTML !== " " && box1.innerHTML === box2.innerHTML && box2.innerHTML === box3.innerHTML) {
@@ -40,51 +42,91 @@ function getWinner() {
                 alert("x wins");
                 playerOneScore++
                 $("#playerOne").html("Player One: " + playerOneScore)
+                for (i = 1; i < 10; i++) {
+                    box = $("#box" + i)
+                    box.off("click")
+                }
 
             } else {
                 alert("o wins")
                 playerTwoScore++
                 $("#playerTwo").html("Player Two: " + playerTwoScore)
+                for (i = 1; i < 10; i++) {
+                    box = $("#box" + i)
+                    box.off("click")
+                }
             }
         } else if (box4.innerHTML !== " " && box4.innerHTML === box5.innerHTML && box4.innerHTML === box6.innerHTML) {
             if (player !== "x") {
                 alert("x wins");
                 playerOneScore++
                 $("#playerOne").html("Player One: " + playerOneScore)
+                for (i = 1; i < 10; i++) {
+                    box = $("#box" + i)
+                    box.off("click")
+                }
             } else {
                 alert("o wins")
                 playerTwoScore++
                 $("#playerTwo").html("Player Two: " + playerTwoScore)
+                for (i = 1; i < 10; i++) {
+                    box = $("#box" + i)
+                    box.off("click")
+                }
             }
         } else if (box7.innerHTML !== " " && box7.innerHTML === box8.innerHTML && box7.innerHTML === box9.innerHTML) {
             if (player !== "x") {
                 alert("x wins");
                 playerOneScore++
                 $("#playerOne").html("Player One: " + playerOneScore)
+                for (i = 1; i < 10; i++) {
+                    box = $("#box" + i)
+                    box.off("click")
+                }
             } else {
                 alert("o wins")
                 playerTwoScore++
                 $("#playerTwo").html("Player Two: " + playerTwoScore)
+                for (i = 1; i < 10; i++) {
+                    box = $("#box" + i)
+                    box.off("click")
+                }
             }
         } else if (box1.innerHTML !== " " && box1.innerHTML === box4.innerHTML && box1.innerHTML === box7.innerHTML) {
             if (player !== "x") {
                 alert("x wins");
                 playerOneScore++
                 $("#playerOne").html("Player One: " + playerOneScore)
+                for (i = 1; i < 10; i++) {
+                    box = $("#box" + i)
+                    box.off("click")
+                }
             } else {
                 alert("o wins")
                 playerTwoScore++
                 $("#playerTwo").html("Player Two: " + playerTwoScore)
+                for (i = 1; i < 10; i++) {
+                    box = $("#box" + i)
+                    box.off("click")
+                }
             }
         } else if (box1.innerHTML !== " " && box1.innerHTML === box4.innerHTML && box1.innerHTML === box7.innerHTML) {
             if (player !== "x") {
                 alert("x wins");
                 playerOneScore++
                 $("#playerOne").html("Player One: " + playerOneScore)
+                for (i = 1; i < 10; i++) {
+                    box = $("#box" + i)
+                    box.off("click")
+                }
             } else {
                 alert("o wins")
                 playerTwoScore++
                 $("#playerTwo").html("Player Two: " + playerTwoScore)
+                for (i = 1; i < 10; i++) {
+                    box = $("#box" + i)
+                    box.off("click")
+                }
             }
 
         } else if (box2.innerHTML !== " " && box2.innerHTML === box5.innerHTML && box2.innerHTML === box8.innerHTML) {
@@ -92,10 +134,18 @@ function getWinner() {
                 alert("x wins");
                 playerOneScore++
                 $("#playerOne").html("Player One: " + playerOneScore)
+                for (i = 1; i < 10; i++) {
+                    box = $("#box" + i)
+                    box.off("click")
+                }
             } else {
                 alert("o wins")
                 playerTwoScore++
                 $("#playerTwo").html("Player Two: " + playerTwoScore)
+                for (i = 1; i < 10; i++) {
+                    box = $("#box" + i)
+                    box.off("click")
+                }
             }
 
         } else if (box3.innerHTML !== " " && box3.innerHTML === box6.innerHTML && box3.innerHTML === box9.innerHTML) {
@@ -103,21 +153,37 @@ function getWinner() {
                 alert("x wins");
                 playerOneScore++
                 $("#playerOne").html("Player One: " + playerOneScore)
+                for (i = 1; i < 10; i++) {
+                    box = $("#box" + i)
+                    box.off("click")
+                }
             } else {
                 alert("o wins")
                 playerTwoScore++
                 $("#playerTwo").html("Player Two: " + playerTwoScore)
+                for (i = 1; i < 10; i++) {
+                    box = $("#box" + i)
+                    box.off("click")
+                }
             }
 
-        } else if (box1.innerHTML !== " " && box1.innerHTML === box4.innerHTML && box1.innerHTML === box9.innerHTML) {
+        } else if (box1.innerHTML !== " " && box1.innerHTML === box5.innerHTML && box1.innerHTML === box9.innerHTML) {
             if (player !== "x") {
                 alert("x wins");
                 playerOneScore++
                 $("#playerOne").html("Player One: " + playerOneScore)
+                for (i = 1; i < 10; i++) {
+                    box = $("#box" + i)
+                    box.off("click")
+                }
             } else {
                 alert("o wins")
                 playerTwoScore++
                 $("#playerTwo").html("Player Two: " + playerTwoScore)
+                for (i = 1; i < 10; i++) {
+                    box = $("#box" + i)
+                    box.off("click")
+                }
             }
 
         } else if (box3.innerHTML !== " " && box3.innerHTML === box5.innerHTML && box3.innerHTML === box7.innerHTML) {
@@ -125,14 +191,26 @@ function getWinner() {
                 alert("x wins");
                 playerOneScore++
                 $("#playerOne").html("Player One: " + playerOneScore)
+                for (i = 1; i < 10; i++) {
+                    box = $("#box" + i)
+                    box.off("click")
+                }
             } else {
                 alert("o wins")
                 playerTwoScore++
                 $("#playerTwo").html("Player Two: " + playerTwoScore)
+                for (i = 1; i < 10; i++) {
+                    box = $("#box" + i)
+                    box.off("click")
+                }
             }
         } if (box1.innerHTML !== " " && box2.innerHTML !== " " && box3.innerHTML !== " " && box4.innerHTML !== " "
             && box5.innerHTML !== " " && box6.innerHTML !== " " && box7.innerHTML !== " " && box8.innerHTML !== " " && box9.innerHTML !== " ") {
             alert("Tie")
+            for (i = 1; i < 10; i++) {
+                box = $("#box" + i)
+                box.off("click")
+            }
         }
     }
 
